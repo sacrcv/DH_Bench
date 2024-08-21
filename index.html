@@ -4,22 +4,9 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-<!--   <meta property="og:image" content="static/image/your_banner_image.png" /> -->
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-<!--   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG"> -->
-<!--   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-<!--   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png"> -->
-<!--   <meta name="twitter:card" content="summary_large_image"> -->
-  <!-- Keywords for your paper to be indexed by-->
+  <meta name="description" content="DH-Bench: Probing Depth and Height Perception of
+  Large Visual-Language Models">
+ 
   <meta name="keywords" content="Visual language models, depth and height perception, benchmark">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -58,10 +45,12 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
+                <!-- put shhereen link -->
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Shehreen Azad</a><sup>1</sup>,</span>
                 <span class="author-block">
                   <a href="http://www.yash-jain.com" target="_blank">Yash Jain</a><sup>2</sup>,</span>
                   <span class="author-block">
+                    <!-- put rishit link -->
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Rishit Garg</a><sup>3</sup>,
                   </span>
                 <span class="author-block">
@@ -132,22 +121,32 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser img-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <h2 class="title is-3 has-text-centered">What is DH-Bench?</h2>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        <span style="font-weight:bold;">DH-Bench  </span>
+        is a benchmark containing programmatically generated synthetic and real-world data for depth and height perception tasks that can be solved by humans very easily, but pose significant challenges for current visual language models (VLMs).</h2>
+      <img src="static/images/Geom_Bench_image_stuff-23.png" height="100%"/>
+      <h2 class="hero-body has-text-centered">
+        <br>
+        Example images in <span style="font-weight:bold;">DH-Bench</span>. 
+      </h2>
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/Geom_Bench_image_stuff-21.png" height="100%"/>
+      <h2 class="hero-body has-text-centered">
+        <br>
+        Example image, prompt, its different question types, and corresponding answers in <span style="font-weight:bold;">DH-Bench</span>. 
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser img -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
