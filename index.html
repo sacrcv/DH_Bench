@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Understanding Depth and Height Perception of Large Visual-Language Models">
+ 
+  <meta name="keywords" content="Visual language models, depth and height perception, benchmark">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Understanding Depth and Height Perception of Large Visual-Language Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/img5-copy-2.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Understanding Depth and Height Perception of Large Visual-Language Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <!-- put shhereen link -->
+                <a href="https://sacrcv.github.io/DH_Bench/" target="_blank">Shehreen Azad</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="http://www.yash-jain.com" target="_blank">Yash Jain</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <!-- put rishit link -->
+                    <a href="https://sacrcv.github.io/DH_Bench/" target="_blank">Rishit Garg</a><sup>3</sup>,
+                  </span>
+                <span class="author-block">
+                    <a href="https://www.crcv.ucf.edu/person/rawat/" target="_blank">Yogesh S Rawat</a><sup>1</sup>,
+                  </span>
+                <span class="author-block">
+                    <a href="https://vibhav-vineet.github.io" target="_blank">Vibhav Vineet</a><sup>2</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup> Center for Research in Computer Vision, University of Central Florida; <sup>2</sup> Microsoft Research; <sup>3</sup> Indian Institute of Technology, Kharagpur.
+                    <span class="author-block">
+                        <br> <h1 class="title is-4"><font color="#B03A2E"><b>CVPR 2025</b></font></h1>
+                   </span>
+<!--                       <br>Conferance name and year</span> -->
+<!--                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2408.11748v4" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/sacrcv/DH-Bench" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2408.11748v4" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser img-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">What is GeoMeter?</h2>
+      <h2 class="subtitle has-text-centered">
+        <span style="font-weight:bold;">GeoMeter </span>
+        is a benchmark containing programmatically generated synthetic data for depth and height perception tasks that can be solved by humans very easily, but pose significant challenges for current visual language models (VLMs).</h2>
+      <img src="static/images/teaser.jpg" height="100%"/>
+      <h2 class="hero-body has-text-centered">
+        <br>
+        Depth and height perception capability of existing VLM. Here, we show failure cases of GPT-4V in understanding depth and
+        height on <span style="font-weight:bold;">GeoMeter.</span>, our proposed suite of benchmark datasets.
+      </h2>
+  </div>
+  </div>
+</section>
+<!-- End teaser img -->
+
+<!-- Paper abstract -->
+<section class="section hero-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>Geometric understanding - including depth and height perception - is fundamental to intelligence and crucial for navigating our environment. Despite the impressive capabilities of large Vision Language Models (VLMs), it remains unclear how well they possess the geometric understanding required for practical applications in visual perception. In this work, we focus on evaluating the geometric understanding of these models, specifically targeting their ability to perceive the depth and height of objects in an image. To address this, we introduce GeoMeter, a suite of benchmark datasets - encompassing 2D and 3D scenarios - to rigorously evaluate these aspects. By benchmarking 18 state-of-the-art VLMs, we found that although they excel in perceiving basic geometric properties like shape and size, they consistently struggle with depth and height perception. Our analysis reveal that these challenges stem from shortcomings in their depth and height reasoning capabilities and inherent biases. This study aims to pave the way for developing VLMs with enhanced geometric understanding by emphasizing depth and height perception as critical components necessary for real-world applications. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- benchmark samples -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Benchmark Samples</h2>
+      </div>
+    </div>
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item"> 
+        <!-- Your image here -->
+        <img src="./static/images/img-sample.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Samples from the proposed suite of benchmark datasets. Here each samples are shown with random query attributes- color and numeric label for GeoMeter-2D; and color and material for GeoMeter-3D dataset. 
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="./static/images/Geom_Bench_image_stuff-21.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Sample image-text pair from the datasets. Here, prompt template shows the basic template for each image-text pair in our
+          datasets, where the prompt example is the actual prompt for the image. The prompt example is appended with either MCQ or True/False type question.  
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+<div class="hero-body">
+  <div class="container">
+  <!-- <h2 class="content has-text-justified">
+
+    </h2> -->
+  </div>
+</div>
+</section>
+
+<!-- Paper Quantitative -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-half">
+        <h2 class="title is-3">Quantitative Results</h2>
+      </div>
+    </div>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered has-text-justified"></div>
+      <img src="./static/images/quant.png" width="80%"/> 
+      <h2 class="hero-body has-text-justified"></h2>
+      Performance comparison of the studied models on proposed datasets. The reported results are averaged across depth and
+      height category, query attributes and scene density with top scores in bold. Average denotes average performance of both datasets. Here, T/F denotes True/False type questions.
+      </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper Analysis -->
+<!-- Paper Analysis -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Analysis</h2> <br>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-5">
+        1. Models show basic visual reasoning capability but struggles in advance perception tasks. 
+        <h2 class="content has-text-justified">
+          We developed a specialized dataset called <em>GeoMeter-2D-Basic</em> containing 30 image-text pairs to evaluate the fundamental visual reasoning capabilities of Vision Language Models (VLMs). This dataset focuses on basic geometric tasks like  line understanding, shape recognition, shape counting, and assessing spatial relationships between shapes. The initial assessments using MCQs demonstrate high performance by models on these basic tasks. Despite this proficiency in simple visual properties, results highlight that these same models struggle significantly with depth and height perception tasks involving similar shapes. This discrepancy underscores the benchmark's value in identifying gaps in VLMs' capabilities to handle more complex spatial reasoning, beyond mere shape recognition.
+        </h2>
+        <div class="columns is-centered has-text-centered">
+        <img src="./static/images/basic.png" width="100%"/> </div>
+        <h2 class="content has-text-centered">
+          Model behavior on basic understanding of shapes and size on our created GeoMeter-2D-Basic dataset (samples on the left).Performance of selected models on this dataset is shown in right. Here, LU, SI, SC and SR respectively denote line understanding, shape identification, shape counting and spatial reasoning. 
+        </h2>
+        <br>
+        <h2 class="title is-5">2. Height perception poses greater challenges than depth
+          perception, especially in stacked object arrangements.</h2>
+        <h2 class="content has-text-justified">
+          The superior performance of models in depth perception tasks, as compared to height perception is likely due to the availability of simpler depth cues—such as occlusion and perspective—in training datasets, which are relatively easy for VLMs to interpret. In contrast, we hypothesize height perception is more complex, requiring analysis of vertical object placement and relationships between object sizes in stacked arrangements. To further support our hypothesis, our analysis of single and stacked objects from the GeoMeter-3D dataset reveals that while the performance gap between depth and height tasks is minor for single objects, there is a substantial decline in performance for height tasks with stacked objects. This pattern suggests that height perception, especially with multiple objects stacked vertically, poses a greater challenge for VLMs than depth perception.
+        </h2>
+        <img src="./static/images/radar.png" height="50%"/>
+        <h2 class="content has-text-justified">
+          Here, ∆ denotes performance gap between depth and height perception, which grows even larger with stacked arrangement of objects, as opposed to single objects. This suggests that while models struggle with height perception in general, stacked objects further degrade their performance.
+        </h2>
+
+
+        <h2 class="title is-5">3. Models' limitation is due to inherent reasoning capability and not insufficient prompt detail. </h2>
+        <h2 class="content has-text-justified">
+          To provide models with additional contextual information regarding visual cues with the help of intermediate reasoning, we implemented chain-of-thought prompting. To evaluate its effectiveness, we selected a subset (100 image-text pairs) from the GeoMeter-3D dataset's depth category and created chain-of-thought prompts with intermediate reasoning steps. Testing top-performing models with these prompts showed only slight performance improvements, despite the highly detailed nature of these prompts. This marginal improvement suggesting that the models may already perform some internal reasoning with standard prompts. The findings indicate that limited depth and height perception performance is due to inherent model limitations in spatial understanding, underscoring the need for architectural advancements rather than solely relying on prompt engineering.
+        </h2>
+        <img src="./static/images/cot sample.png" height="100%"/>
+        <h2 class="content has-text-justified">
+          Example of prompt engineering using chain of thought prompting.
+        </h2>
+        <img src="./static/images/cot result.png.png" height="100%"/>
+        <h2 class="content has-text-justified">
+          Performance gain with chain of thought prompting over standard prompting.
+        </h2>
+
+        <h2 class="title is-5">4. Some open-source models are more biased towards picking True over False than others. </h2>
+        <h2 class="content has-text-justified">
+          The performance of some open-source models on True/False questions tends to hover around 50% , suggesting they might not be effectively distinguishing between true and false statements, potentially defaulting to random guesses. This is highlighted by experiments showing similar outcomes when ground truth is random versus always set to "True," and a significant performance decline when it is always "False," indicating a bias towards predicting "True." This bias toward "True" may arise from imbalances in training data, where models are overexposed to affirmative statements or lack sufficient counterexamples of false statements. As a result, rather than demonstrating genuine understanding, these models often rely on heuristic patterns or shortcuts. Furthermore, this behavior highlights a deeper issue: the models' inability to engage in more nuanced decision-making or reasoning under uncertainty. True/False questions, though simple in format, test models' grasp of logical consistency and factual correctness - an area where many open-source models falter. By exposing such tendencies, this evaluation method provides valuable insight into where these models need refinement, particularly in developing the capacity for more context-driven predictions.
+        </h2>
+        <img src="./static/images/tf-bias.png" height="100%"/>
+        <h2 class="content has-text-justified">
+          Effect of ground truth value in True/False questions. GT-R denotes randomly set ground truth between true and false; whereas GT-T/F denotes ground truth always true or always false. 
+        </h2>
+
+        <h2 class="title is-5">5. Some open source models are more biased towards picking the first choice in case of MCQ. </h2>
+        <h2 class="content has-text-justified">
+          Experiments reveal that while closed-source models show consistent performance across various MCQ ground truth placements, open-source models exhibit a significant bias toward selecting the first option, particularly when the ground truth is positioned as the first choice. This bias could stem from the way training data is structured, where the first choice is frequently correct or if the models encounter more examples with answers listed early in the sequence, leading models to develop a preference for selecting it. Their performance drops notably when the correct answer is absent, suggesting these models struggle with identifying ``None of the above" options and may rely on heuristics rather than actual reasoning, leading to random selections. This reflects a limitation in their reasoning abilities, as they likely rely on pattern recognition rather than genuine understanding of the question and its context, which suggests that open-source models may lack sophisticated decision-making processes, opting for shortcuts when faced with challenging questions.
+        </h2>
+        <img src="./static/images/mcq-bias.png sample.png" height="100%"/>
+        <h2 class="content has-text-justified">
+          Effect of ground truth ordering in choices of MCQs. GT-C1 and GT-Ab denotes ground truth being choice 1 and not present respectively. 
+        </h2>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+         Your image here -->
+        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item"> -->
+      <!-- Your image here -->
+      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> --> 
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{azad2025understandingdepthheightperception,
+        title={Understanding Depth and Height Perception in Large Visual-Language Models}, 
+        author={Shehreen Azad and Yash Jain and Rishit Garg and Yogesh S Rawat and Vibhav Vineet},
+        year={2025},
+        eprint={2408.11748},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2408.11748}, 
+   }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
