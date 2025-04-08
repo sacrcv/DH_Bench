@@ -61,7 +61,7 @@
                   <div class="is-size-5 publication-authors">
                     <span class="author-block"><sup>1</sup> Center for Research in Computer Vision, University of Central Florida; <sup>2</sup> Microsoft Research; <sup>3</sup> Indian Institute of Technology, Kharagpur.
                     <span class="author-block">
-                        <br> <h1 class="title is-4"><font color="#B03A2E"><b>CVPR 2025</b></font></h1>
+                        <br> <h1 class="title is-4"><font color="#B03A2E"><b>CVPRW 2025</b></font></h1>
                    </span>
 <!--                       <br>Conferance name and year</span> -->
 <!--                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
@@ -114,15 +114,15 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h2 class="title is-3 has-text-centered">What is GeoMeter?</h2>
+      <h2 class="title is-3 has-text-justified">What is GeoMeter?</h2>
       <h2 class="subtitle has-text-centered">
         <span style="font-weight:bold;">GeoMeter </span>
         is a benchmark containing programmatically generated synthetic data for depth and height perception tasks that can be solved by humans very easily, but pose significant challenges for current visual language models (VLMs).</h2>
-      <img src="static/images/teaser.jpg" height="100%"/>
+      <img src="./static/images/teaser.jpg" height="100%"/>
       <h2 class="hero-body has-text-centered">
         <br>
-        Depth and height perception capability of existing VLM. Here, we show failure cases of GPT-4V in understanding depth and
-        height on <span style="font-weight:bold;">GeoMeter.</span>, our proposed suite of benchmark datasets.
+        Failure cases of GPT-4V in depth and
+        height perception task on <span style="font-weight:bold;">GeoMeter</span>, our proposed suite of benchmark datasets.
       </h2>
   </div>
   </div>
@@ -130,7 +130,7 @@
 <!-- End teaser img -->
 
 <!-- Paper abstract -->
-<section class="section hero-light">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -149,24 +149,49 @@
 <section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-        <h2 class="title is-3">Benchmark Samples</h2>
-      </div>
+        <h2 class="title is-3">Benchmark Characteristics and Statistics</h2>
+
+        <h2 class="content has-text-justified">
+        
+          <ul>
+            <li><b>GeoMeter</b> specifically probes depth and height perception, whereas previous benchmarks encompass general purpose recognition-based spatial reasoning tasks. </li>
+            <li><b>GeoMeter</b> provides insight on current VLMs limitation in terms of complex visual perception capabilities. </li>
+            <li><b>GeoMeter</b> contains programmatically generated 11.4k image-text pairs in depth and height categories including multiple unique query attributes and varying scene density, where the questions are MCQ and True/False types.</li>
+          </ul>
+          </h2>
+
+    <img src="static/images/img-sample.jpg" height="100%"/>
+      <h2 class="hero-body has-text-centered">
+        <br>
+        Samples from the proposed suite of benchmark datasets. Here each samples are shown with random query attributes- color and numeric label for GeoMeter-2D; and color and material for GeoMeter-3D dataset. 
+      </h2>
+
+    <img src="./static/images/Geom_Bench_image_stuff-21.png" height="100%"/>
+      <h2 class="hero-body has-text-centered">
+        <br>
+        Sample image-text pair. Here, prompt template shows the basic template for each image-text pair in our datasets, where the prompt example is the actual prompt for the image. The prompt example is appended with either MCQ or True/False type question. 
+      </h2>
+
     </div>
+  </div>
+</section>
+
+
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item"> 
+       <div class="item">  -->
         <!-- Your image here -->
-        <img src="./static/images/img-sample.jpg" alt="MY ALT TEXT"/>
+        <!-- <img src="./static/images/img-sample.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Samples from the proposed suite of benchmark datasets. Here each samples are shown with random query attributes- color and numeric label for GeoMeter-2D; and color and material for GeoMeter-3D dataset. 
         </h2>
       </div>
-      <div class="item">
+      <div class="item"> -->
         <!-- Your image here -->
-        <img src="./static/images/Geom_Bench_image_stuff-21.png" alt="MY ALT TEXT"/>
+        <!-- <img src="./static/images/Geom_Bench_image_stuff-21.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Sample image-text pair from the datasets. Here, prompt template shows the basic template for each image-text pair in our
           datasets, where the prompt example is the actual prompt for the image. The prompt example is appended with either MCQ or True/False type question.  
@@ -176,19 +201,19 @@
 </div>
 </div>
 <div class="hero-body">
-  <div class="container">
+  <div class="container"> -->
   <!-- <h2 class="content has-text-justified">
 
     </h2> -->
-  </div>
+  <!-- </div>
 </div>
-</section>
+</section> -->
 
 <!-- Paper Quantitative -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-half">
+      <div class="column is-five-sixths">
         <h2 class="title is-3">Quantitative Results</h2>
       </div>
     </div>
@@ -200,7 +225,7 @@
       <img src="./static/images/quant.png" width="80%"/> 
       <h2 class="hero-body has-text-justified"></h2>
       Performance comparison of the studied models on proposed datasets. The reported results are averaged across depth and
-      height category, query attributes and scene density with top scores in bold. Average denotes average performance of both datasets. Here, T/F denotes True/False type questions.
+      height category, query attributes and scene density with top scores in bold.
       </h2>
       </div>
     </div>
@@ -219,41 +244,43 @@
         <h2 class="title is-5">
         1. Models show basic visual reasoning capability but struggles in advance perception tasks. 
         <h2 class="content has-text-justified">
-          We developed a specialized dataset called <em>GeoMeter-2D-Basic</em> containing 30 image-text pairs to evaluate the fundamental visual reasoning capabilities of Vision Language Models (VLMs). This dataset focuses on basic geometric tasks like  line understanding, shape recognition, shape counting, and assessing spatial relationships between shapes. The initial assessments using MCQs demonstrate high performance by models on these basic tasks. Despite this proficiency in simple visual properties, results highlight that these same models struggle significantly with depth and height perception tasks involving similar shapes. This discrepancy underscores the benchmark's value in identifying gaps in VLMs' capabilities to handle more complex spatial reasoning, beyond mere shape recognition.
+          We developed a specialized dataset called <em>GeoMeter-2D-Basic</em> to evaluate the fundamental visual reasoning capabilities of VLMs. This dataset focuses on basic geometric tasks like  line understanding, shape recognition, shape counting, and assessing spatial relationships between shapes. While models perform well on these simpler tasks, they show significant difficulty with depth and height perception, revealing limitations in handling complex spatial reasoning. This highlights GeoMeter's usefulness in pinpointing gaps in VLM capabilities.
+
         </h2>
         <div class="columns is-centered has-text-centered">
         <img src="./static/images/basic.png" width="100%"/> </div>
         <h2 class="content has-text-centered">
-          Model behavior on basic understanding of shapes and size on our created GeoMeter-2D-Basic dataset (samples on the left).Performance of selected models on this dataset is shown in right. Here, LU, SI, SC and SR respectively denote line understanding, shape identification, shape counting and spatial reasoning. 
+          Performance of selected models on basic visual reasoning tasks (samples shown in left). Here, LU, SI, SC and SR respectively denote line understanding, shape identification, shape counting and spatial reasoning. 
         </h2>
         <br>
         <h2 class="title is-5">2. Height perception poses greater challenges than depth
           perception, especially in stacked object arrangements.</h2>
         <h2 class="content has-text-justified">
-          The superior performance of models in depth perception tasks, as compared to height perception is likely due to the availability of simpler depth cues—such as occlusion and perspective—in training datasets, which are relatively easy for VLMs to interpret. In contrast, we hypothesize height perception is more complex, requiring analysis of vertical object placement and relationships between object sizes in stacked arrangements. To further support our hypothesis, our analysis of single and stacked objects from the GeoMeter-3D dataset reveals that while the performance gap between depth and height tasks is minor for single objects, there is a substantial decline in performance for height tasks with stacked objects. This pattern suggests that height perception, especially with multiple objects stacked vertically, poses a greater challenge for VLMs than depth perception.
+          Models perform better on depth perception tasks than height perception, likely because training data contain simpler depth cues like occlusion and perspective. Height perception is more complex, involving vertical positioning and size relationships in stacked objects. Analysis from the GeoMeter-3D dataset shows a minor performance gap for single objects but a significant drop in height task accuracy with stacked objects, indicating that vertical spatial reasoning is particularly challenging for VLMs.
         </h2>
-        <img src="./static/images/radar.png" height="50%"/>
-        <h2 class="content has-text-justified">
+        <img src="./static/images/radar.png" height="45%"/>
+        <h2 class="content has-text-centered">
           Here, ∆ denotes performance gap between depth and height perception, which grows even larger with stacked arrangement of objects, as opposed to single objects. This suggests that while models struggle with height perception in general, stacked objects further degrade their performance.
         </h2>
 
 
         <h2 class="title is-5">3. Models' limitation is due to inherent reasoning capability and not insufficient prompt detail. </h2>
         <h2 class="content has-text-justified">
-          To provide models with additional contextual information regarding visual cues with the help of intermediate reasoning, we implemented chain-of-thought prompting. To evaluate its effectiveness, we selected a subset (100 image-text pairs) from the GeoMeter-3D dataset's depth category and created chain-of-thought prompts with intermediate reasoning steps. Testing top-performing models with these prompts showed only slight performance improvements, despite the highly detailed nature of these prompts. This marginal improvement suggesting that the models may already perform some internal reasoning with standard prompts. The findings indicate that limited depth and height perception performance is due to inherent model limitations in spatial understanding, underscoring the need for architectural advancements rather than solely relying on prompt engineering.
+          To enhance reasoning, chain-of-thought prompting was applied. Despite providing detailed intermediate reasoning steps, top-performing models showed only slight performance gains, suggesting they already perform some internal reasoning. These results indicate that the models' limited depth and height perception stems from inherent spatial understanding limitations, highlighting the need for architectural improvements over prompt-based solutions.
         </h2>
         <img src="./static/images/cot sample.png" height="100%"/>
-        <h2 class="content has-text-justified">
+        <h2 class="content has-text-centered">
           Example of prompt engineering using chain of thought prompting.
         </h2>
-        <img src="./static/images/cot result.png.png" height="100%"/>
-        <h2 class="content has-text-justified">
+        <img src="./static/images/cot result.png" height="60%"/>
+        <h2 class="content has-text-centered">
           Performance gain with chain of thought prompting over standard prompting.
         </h2>
 
         <h2 class="title is-5">4. Some open-source models are more biased towards picking True over False than others. </h2>
         <h2 class="content has-text-justified">
-          The performance of some open-source models on True/False questions tends to hover around 50% , suggesting they might not be effectively distinguishing between true and false statements, potentially defaulting to random guesses. This is highlighted by experiments showing similar outcomes when ground truth is random versus always set to "True," and a significant performance decline when it is always "False," indicating a bias towards predicting "True." This bias toward "True" may arise from imbalances in training data, where models are overexposed to affirmative statements or lack sufficient counterexamples of false statements. As a result, rather than demonstrating genuine understanding, these models often rely on heuristic patterns or shortcuts. Furthermore, this behavior highlights a deeper issue: the models' inability to engage in more nuanced decision-making or reasoning under uncertainty. True/False questions, though simple in format, test models' grasp of logical consistency and factual correctness - an area where many open-source models falter. By exposing such tendencies, this evaluation method provides valuable insight into where these models need refinement, particularly in developing the capacity for more context-driven predictions.
+          Some open-source models perform near chance (around 50% accuracy) on True/False questions, indicating a tendency to guess—often biased toward "True." This bias likely stems from training data imbalances with more affirmative statements and fewer false examples. Experiments confirm this behavior, with performance dropping when all answers are "False." Rather than true reasoning, models rely on heuristics, exposing their struggle with logical consistency and uncertainty in complex situation. This evaluation reveals a key weakness in context-driven reasoning and highlights the need for improved model training and design.
+
         </h2>
         <img src="./static/images/tf-bias.png" height="100%"/>
         <h2 class="content has-text-justified">
@@ -262,9 +289,9 @@
 
         <h2 class="title is-5">5. Some open source models are more biased towards picking the first choice in case of MCQ. </h2>
         <h2 class="content has-text-justified">
-          Experiments reveal that while closed-source models show consistent performance across various MCQ ground truth placements, open-source models exhibit a significant bias toward selecting the first option, particularly when the ground truth is positioned as the first choice. This bias could stem from the way training data is structured, where the first choice is frequently correct or if the models encounter more examples with answers listed early in the sequence, leading models to develop a preference for selecting it. Their performance drops notably when the correct answer is absent, suggesting these models struggle with identifying ``None of the above" options and may rely on heuristics rather than actual reasoning, leading to random selections. This reflects a limitation in their reasoning abilities, as they likely rely on pattern recognition rather than genuine understanding of the question and its context, which suggests that open-source models may lack sophisticated decision-making processes, opting for shortcuts when faced with challenging questions.
+          Experiments show that open-source models are biased toward selecting the first MCQ option, especially when it's correct, likely due to training data patterns. Their performance drops when the correct answer is absent, revealing difficulty with “None of the above” choices and a reliance on heuristics over reasoning. In contrast, closed-source models remain consistent across answer placements. These findings suggest open-source models often use pattern recognition rather than true understanding, highlighting limitations in their decision-making and reasoning capabilities.
         </h2>
-        <img src="./static/images/mcq-bias.png sample.png" height="100%"/>
+        <img src="./static/images/mcq-bias.png" height="100%"/>
         <h2 class="content has-text-justified">
           Effect of ground truth ordering in choices of MCQs. GT-C1 and GT-Ab denotes ground truth being choice 1 and not present respectively. 
         </h2>
